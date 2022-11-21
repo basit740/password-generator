@@ -124,3 +124,29 @@ function generateRandom(output1, output2) {
 	output1.textContent = password1;
 	output2.textContent = password2;
 }
+
+const allLabels = document.querySelectorAll('.output');
+allLabels.forEach((copy) => {
+	copy.addEventListener('click', function (event) {
+		if (
+			event.target.textContent === '' ||
+			event.target.textContent === undefined ||
+			event.target.textContent === null
+		) {
+			return;
+		}
+
+		const text = event.target.textContent;
+		const idNumber = event.target.id.split('put')[1];
+		try {
+			navigator.clipboard.writeText(text);
+			document.getElementById('copy' + idNumber).innerText =
+				'Copied to clipboard';
+			setTimeout(function () {
+				document.getElementById('copy' + idNumber).innerText = 'Click to copy';
+			}, 1200);
+		} catch (err) {
+			console.error('Failed to copy!', err);
+		}
+	});
+});

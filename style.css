@@ -88,6 +88,21 @@ label {
 	color: #55f991;
 	font-size: 16px;
 	font-weight: 400;
+	cursor: pointer;
+}
+
+/* // Copy */
+
+.output-content {
+	position: relative;
+	cursor: pointer;
+}
+.copy-status {
+	color: #fff;
+	position: absolute;
+	top: 100;
+	right: 0;
+	transition: all 0.7s;
 }
 
 /* Media Queries */
