@@ -54,6 +54,10 @@ body {
 	margin-bottom: 2.1875rem;
 	color: #ffffff;
 	cursor: pointer;
+	transition: all 0.4s;
+}
+.btn:hover {
+	background-color: #10b981e3;
 }
 .btn-gen-password {
 }
