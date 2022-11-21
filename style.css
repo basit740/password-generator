@@ -91,8 +91,14 @@ label {
 	html {
 		font-size: 70%;
 	}
+
 	.password-content,
 	.output-container {
 		grid-template-columns: 1fr;
+	}
+
+	.password {
+		background-color: #1f2937;
+		padding: 60px 30px;
 	}
 }
