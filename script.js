@@ -133,7 +133,7 @@ allLabels.forEach((copy) => {
 			event.target.textContent === undefined ||
 			event.target.textContent === null
 		) {
-			return;
+			return true;
 		}
 
 		const text = event.target.textContent;
