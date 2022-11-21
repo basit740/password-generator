@@ -1,0 +1,97 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	background-color: #1c1c1c;
+	font-family: 'Karla', sans-serif;
+}
+
+.password-container {
+	max-width: 1253px;
+	padding: 64px 62px;
+	margin: 0 auto;
+}
+.password-content {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 24px;
+}
+.password {
+	background-color: #1f2937;
+	padding: 115px 52px;
+}
+.password-heading {
+	font-size: 2.625rem;
+	font-weight: 800;
+	color: #ffffff;
+	margin-bottom: 0.625rem;
+}
+
+.heading-green {
+	color: #4adf86;
+}
+.password-desc {
+	font-weight: 400;
+	font-size: 1.25rem;
+	color: #d5d4d8;
+	margin-bottom: 3.1875rem;
+}
+
+/* Buttons */
+.btn {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	width: 191px;
+	height: 42px;
+	background-color: #10b981;
+	box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+	border-radius: 6px;
+	border: none;
+	margin-bottom: 2.1875rem;
+	color: #ffffff;
+	cursor: pointer;
+}
+.btn-gen-password {
+}
+
+.password-text {
+	border: none;
+	border-bottom: 1px solid #2f3e53;
+	background-color: transparent;
+	width: 100%;
+	margin-bottom: 2.1875rem;
+	outline: none;
+}
+.output-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	align-items: center;
+	gap: 1rem;
+}
+label {
+	background-color: #273549;
+	border-radius: 6px;
+	display: block;
+	/* width: 100%; */
+	height: 39px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #55f991;
+	font-size: 16px;
+	font-weight: 400;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+	html {
+		font-size: 70%;
+	}
+	.password-content {
+		grid-template-columns: 1fr;
+	}
+}
